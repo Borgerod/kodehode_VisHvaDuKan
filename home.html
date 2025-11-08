@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round&display=swap"
+			rel="stylesheet" />
+		<title>Vis hva du kan</title>
+		<link rel="stylesheet" href="home.css" />
+		<link rel="stylesheet" href="comment-section.css" />
+		<link rel="stylesheet" href="buttons.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<span class="yt-icon"
+					><div
+						style="
+							width: 100%;
+							height: 100%;
+							display: block;
+							fill: currentcolor;
+						">
+						<!-- <svg
+							xmlns="http://www.w3.org/2000/svg"
+							id="yt-ringo2-red-svg_yt61"
+							class="external-icon"
+							width="100"
+							height="20"
+							viewBox="0 0 100 20"
+							focusable="false"
+							aria-hidden="true"
+							style="
+								pointer-events: none;
+								display: inherit;
+								width: 100%;
+								height: 100%;
+							">
+							<g>
+								<path
+									d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z"
+									fill="#00aef0"></path>
+
+								<g transform="translate(7,3) scale(0.6)">
+									<path
+										d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"
+										fill="white" />
+								</g>
+							</g>
+						</svg> -->
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="100"
+							height="20"
+							viewBox="0 0 29 20"
+							style="
+								display: inline-block;
+								vertical-align: middle;
+								pointer-events: none;
+							">
+							<g>
+								<path
+									d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z"
+									fill="#00aef0" />
+								<g transform="translate(7,3) scale(0.6)">
+									<path
+										d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"
+										fill="white" />
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div id="text-container">
+						<span id="title"> Premium </span>
+						<span id="language"> NO </span>
+					</div>
+				</span>
+			</div>
+
+			<!--  -->
+			<div class="search section">
+				<div class="bar">
+					<div class="field"></div>
+					<span class="material-icons-round" id="icon"> search </span>
+				</div>
+				<!-- <span class="material-icons-round" id="icon"> mic </span> -->
+				<button class="circular button filled">
+					<span class="material-icons-round" id="">mic</span>
+				</button>
+			</div>
+
+			<!--  -->
+			<div class="flex-row">
+				<button class="button pill filled">
+					<span class="material-icons-round"> add </span>
+					<span class="">Create</span>
+				</button>
+				<button class="circular button transparent">
+					<span class="material-icons-round"> notifications </span>
+				</button>
+				<img
+					src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+					alt="profile thumbnail"
+					class="thumbnail" />
+			</div>
+		</header>
+
+		<main class="" id="main">
+			<section class="left" id="video-section">
+				<!-- Video overlay -->
+				<div id="video-overlay">
+					<div class="top flex row">
+						<div class="flex row">
+							<button class="circular button glass">
+								<span class="material-icons-round"
+									>volume_up</span
+								>
+							</button>
+							<button class="circular button glass">
+								<span class="material-icons-round"
+									>play_arrow</span
+								>
+							</button>
+						</div>
+
+						<div class="flex row">
+							<button class="circular button glass">
+								<span class="material-icons-round"
+									>more_vert</span
+								>
+							</button>
+							<button class="circular button glass">
+								<span class="material-icons-round"
+									>closed_caption</span
+								>
+							</button>
+							<button class="circular button glass">
+								<span class="material-icons-round"
+									>fullscreen</span
+								>
+							</button>
+							<button class="circular button glass">
+								<span class="material-icons-round"
+									>open_in_full</span
+								>
+							</button>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="flex-row">
+							<img
+								src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+								alt="profile thumbnail"
+								class="thumbnail" />
+							<h3 id="user_name">@user_123</h3>
+							<button class="button pill filled" id="subscribe">
+								subscribe
+							</button>
+						</div>
+
+						<h3>Video_Title</h3>
+						<p id="short_description">short_description</p>
+					</div>
+				</div>
+				<!-- Video -->
+				<video preload="metadata">
+					<source
+						src="assets/videos/shorts/S_pAUPv4Ne4Nk.mp4"
+						type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+				<!-- <video tabindex="-1" data-no-fullscreen="true" controlslist="nodownload" style="width: 449px; height: 798px; left: 0px; top: 0px;" src="blob:https://www.youtube.com/0d8a6654-bd91-4671-8bc9-c4fa5090d579" loop=""></video> -->
+			</section>
+
+			<section class="right" id="comment-section">
+				<div id="comment-list">
+					<h2>Comments</h2>
+					<div class="comments">
+						<div class="comment">
+							<img
+								src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+								alt="profile thumbnail"
+								class="thumbnail" />
+							<div class="flex-col">
+								<div class="flex-row user">
+									<p id="user_name">@user_123</p>
+									<span id="timer"> 12 minutes ago </span>
+								</div>
+								<div class="comment-text">
+									The missile knows where it is at all times.
+									It knows this because it knows where it
+									isn't, by subtracting where it is, from
+									where it isn't, or where it isn't, from
+									where it is, whichever is greater, it
+									obtains a difference, or deviation. The
+									guidance sub-system uses deviations to
+									generate corrective commands to drive the
+									missile from a position where it is, to a
+									position where it isn't, and arriving at a
+									position where it wasn't, it now is.
+									Consequently, the position where it is, is
+									now the position that it wasn't, and it
+									follows that the position where it was, is
+									now the position that it isn't. In the event
+									of the position that it is in is not the
+									position that it wasn't, the system has
+									required a variation. The variation being
+									the difference between where the missile is,
+									and where it wasn't. If variation is
+									considered to be a significant factor, it
+									too, may be corrected by the GEA. However,
+									the missile must also know where it was. The
+									missile guidance computance scenario works
+									as follows: Because a variation has modified
+									some of the information the missile has
+									obtained, it is not sure just where it is,
+									however it is sure where it isn't, within
+									reason, and it knows where it was. It now
+									subracts where it should be, from where it
+									wasn't, or vice versa. By differentiating
+									this from the algebraic sum og where it
+									shouldn't be, and where it was. It is able
+									to obtain a deviation, and a variation,
+									which is called "air"
+								</div>
+								<button class="text read-more">
+									Read more
+								</button>
+								<div class="flex-row button-row" id="">
+									<div class="button-row">
+										<button class="circular button small">
+											<span class="material-icons-round"
+												>thumb_up</span
+											>
+										</button>
+										<span class="counter">
+											1.2k likes
+										</span>
+										<button class="circular button small">
+											<span class="material-icons-round"
+												>thumb_down</span
+											>
+										</button>
+									</div>
+									<button class="button text small">
+										reply
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="comment">
+							<img
+								src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+								alt="profile thumbnail"
+								class="thumbnail" />
+							<div class="flex-col">
+								<div class="flex-row user">
+									<p id="user_name">@Tims_animal_facts</p>
+									<span id="timer"> 10 days ago </span>
+								</div>
+								<div class="comment-text">oh look a penny!</div>
+
+								<div class="flex-row button-row" id="">
+									<div class="button-row">
+										<button class="circular button small">
+											<span class="material-icons-round"
+												>thumb_up</span
+											>
+										</button>
+										<span class="counter"> 21 likes </span>
+										<button class="circular button small">
+											<span class="material-icons-round"
+												>thumb_down</span
+											>
+										</button>
+									</div>
+									<button class="button text small">
+										reply
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="comment">
+							<img
+								src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+								alt="profile thumbnail"
+								class="thumbnail" />
+							<div class="flex-col">
+								<div class="flex-row user">
+									<p id="user_name">@demonslayer_69</p>
+									<span id="timer"> 3 days ago </span>
+								</div>
+								<div class="comment-text">Bruh</div>
+								<button class="text read-more">
+									Read more
+								</button>
+								<div class="flex-row button-row" id="">
+									<div class="button-row">
+										<button class="circular button small">
+											<span class="material-icons-round"
+												>thumb_up</span
+											>
+										</button>
+										<span class="counter"> 912 likes </span>
+										<button class="circular button small">
+											<span class="material-icons-round"
+												>thumb_down</span
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div id="write-comment-container">
+							<div class="write-comment-clip">
+								<div
+									id="write-comment"
+									role="textbox"
+									contenteditable="true"
+									data-placeholder="Write a comment..."
+									aria-label="Write a comment"></div>
+							</div>
+						</div>
+						<div class="flex-row button-row" id="comment-buttons">
+							<button class="button text">Cancel</button>
+							<button class="button pill glass">
+								<span class="">Comment</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>

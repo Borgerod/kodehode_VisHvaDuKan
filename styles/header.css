@@ -1,0 +1,105 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 24px 14px 14px;
+	width: 100%;
+	background: transparent;
+}
+
+header img {
+	height: 44px;
+	width: auto;
+	object-fit: contain;
+}
+.search #icon {
+	background-color: transparent;
+}
+
+#logo-row {
+	padding-top: 0.5rem;
+	padding-right: 1rem;
+	align-items: center;
+	gap: 1rem;
+}
+
+#menu-button {
+	display: flex;
+	align-items: center;
+	padding-left: 0;
+	margin-bottom: 1rem;
+	padding: 0 0.5rem;
+}
+
+.search {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 2.5rem;
+	min-width: 220px;
+	max-width: 600px;
+	padding: 0 1rem;
+	gap: 0.5rem;
+}
+.search .bar {
+	border-radius: 5rem;
+	background-color: hsl(0, 0%, 18.82%);
+	border-color: hsl(0, 0%, 18.82%);
+	border-width: 1px;
+	display: inherit;
+	flex-direction: inherit;
+	padding: 1px;
+	width: 100%;
+}
+.search .field {
+	background-color: hsl(0, 0%, 7%);
+	border-radius: 5rem 0 0 5rem;
+	width: 100%;
+	display: inherit;
+	flex-direction: inherit;
+}
+
+.search #icon {
+	height: 100%;
+	display: inherit;
+	padding: 0 1rem;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+/*> logo */
+.logo {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	align-self: flex-start;
+	justify-content: left;
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.logo #text-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.logo #title {
+	font-size: large;
+	align-self: baseline;
+}
+
+.logo #language {
+	font-size: x-small;
+	color: rgba(255, 255, 255, 0.4);
+	align-self: flex-start;
+}
+
+.logo .yt-icon {
+	display: flex;
+	height: 20px;
+	width: 93px;
+	gap: 5px;
+	padding: 7px 25px 10px 5px;
+	justify-content: center;
+}

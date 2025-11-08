@@ -1,0 +1,27 @@
+#menu-bar {
+	display: flex;
+	height: 100%;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: start;
+	width: fit-content;
+	padding: 0 4px;
+}
+#menu-bar button {
+	height: fit-content;
+	width: 64px;
+	padding: 1rem 0;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-bar button .label {
+	font-size: smaller;
+}
+#menu-bar button:hover {
+	background-color: var(--highlight);
+}

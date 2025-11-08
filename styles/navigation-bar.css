@@ -1,0 +1,20 @@
+#navigation-bar {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: max-content;
+	align-self: flex-start;
+	padding: 0 4px;
+	gap: 1rem;
+	flex-grow: 0;
+}
+
+#navigation-bar button {
+	padding: 1rem;
+}
+
+#previous {
+	visibility: hidden;
+}

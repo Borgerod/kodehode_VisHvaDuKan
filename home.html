@@ -11,8 +11,12 @@
 			rel="stylesheet" />
 		<title>Vis hva du kan</title>
 		<link rel="stylesheet" href="/styles/comment-section.css" />
+		<link rel="stylesheet" href="/styles/video-section.css" />
 		<link rel="stylesheet" href="/styles/buttons.css" />
 		<link rel="stylesheet" href="/styles/home.css" />
+		<link rel="stylesheet" href="/styles/navigation-bar.css" />
+		<link rel="stylesheet" href="/styles/menu-bar.css" />
+		<link rel="stylesheet" href="/styles/header.css" />
 	</head>
 	<body>
 		<header>
@@ -32,33 +36,7 @@
 							display: block;
 							fill: currentcolor;
 						">
-						<!-- <svg
-							xmlns="http://www.w3.org/2000/svg"
-							id="yt-ringo2-red-svg_yt61"
-							class="external-icon"
-							width="100"
-							height="20"
-							viewBox="0 0 100 20"
-							focusable="false"
-							aria-hidden="true"
-							style="
-								pointer-events: none;
-								display: inherit;
-								width: 100%;
-								height: 100%;
-							">
-							<g>
-								<path
-									d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z"
-									fill="#00aef0"></path>
-
-								<g transform="translate(7,3) scale(0.6)">
-									<path
-										d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"
-										fill="white" />
-								</g>
-							</g>
-						</svg> -->
+		
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="100"
@@ -88,25 +66,18 @@
 				</span>
 			</div>
 			</div>
-			<!--  -->
 			<div class="search section">
 				<div class="bar">
 					<div class="field"></div>
 					<button class="circular button filled" id="icon">
 					<span class="material-icons-round" > search </span>
 				</button>
-					<!-- <button class="circular transparent">
 
-						<span class="material-icons-round" id="icon"> search </span>
-					</button> -->
 				</div>
-				<!-- <span class="material-icons-round" id="icon"> mic </span> -->
 				<button class="circular button filled">
 					<span class="material-icons-round" id="">mic</span>
 				</button>
 			</div>
-
-			<!--  -->
 			<div class="flex-row">
 				<button class="pill filled">
 					<span class="material-icons-round"> add </span>
@@ -155,9 +126,7 @@
 					<span class="label">Subscriptions</span>
 				</button>
 				<button class="filled transparent">
-					<!-- <span class="material-icons-round"
-						>play_circle_outline</span
-					> -->
+				
 					<span class="material-icons-round">play_circle</span>
 					<span class="label">Music</span>
 				</button>
@@ -172,7 +141,6 @@
 			</section>
 
 			<section class="left" id="video-section">
-				<!-- Video overlay -->
 				<div id="video-container">
 					<div id="video-overlay">
 						<div class="top flex row">
@@ -225,15 +193,12 @@
 							<p id="short_description">short_description</p>
 						</div>
 					</div>
-					<!-- Video -->
-					<!-- <div id="video-container"> -->
 					<video preload="metadata" controls loop>
 						<source
 							src="assets/videos/shorts/S_pAUPv4Ne4Nk.mp4"
 							type="video/mp4" />
 						Your browser does not support the video tag.
 					</video>
-					<!-- <video tabindex="-1" data-no-fullscreen="true" controlslist="nodownload" style="width: 449px; height: 798px; left: 0px; top: 0px;" src="blob:https://www.youtube.com/0d8a6654-bd91-4671-8bc9-c4fa5090d579" loop=""></video> -->
 				</div>
 				<div id="button-col">
 					<div>
@@ -353,7 +318,6 @@
 											>
 										</button>
 									</div>
-									<!-- <button class="pill button text small"> -->
 									<button class="pill text small transparent">
 										reply
 									</button>
@@ -465,82 +429,5 @@
 		</main>
 		<footer></footer>
 	</body>
-	<!-- 
-max lines expander from youtube
-<ytd-expander
-	id="expander"
-	max-number-of-lines="4"
-	class="style-scope ytd-comment-view-model"
-	collapsed=""
-	should-use-number-of-lines=""
-	style="--ytd-expander-max-lines: 4">
-	
-	<div id="content" class="style-scope ytd-expander">
-		<yt-pdg-comment-chip-renderer
-			id="paid-comment-chip"
-			slot="content"
-			class="style-scope ytd-comment-view-model"
-			hidden=""
-			>
-			<div
-				id="comment-chip-container"
-				class="style-scope yt-pdg-comment-chip-renderer">
-				<yt-icon class="style-scope yt-pdg-comment-chip-renderer"
-					>
-				><span
-					id="comment-chip-price"
-					class="style-scope yt-pdg-comment-chip-renderer">
-				</span></div></yt-pdg-comment-chip-renderer
-		><yt-attributed-string
-			id="content-text"
-			slot="content"
-			user-input=""
-			class="style-scope ytd-comment-view-model"
-			><span
-				class="yt-core-attributed-string yt-core-attributed-string--white-space-pre-wrap"
-				dir="auto"
-				role="text"
-				>I have a table top mini fire pit fueled by isopropyl alcohol
-				and it blew up several times till I figured you cant let the
-				fuel get too low</span
-			></yt-attributed-string
-		>
-	</div>
-	<tp-yt-paper-button
-		id="less"
-		aria-expanded="true"
-		noink=""
-		class="style-scope ytd-expander"
-		hidden=""
-		style-target="host"
-		role="button"
-		tabindex="0"
-		animated=""
-		elevation="0"
-		aria-disabled="false">
-		<span
-			class="less-button style-scope ytd-comment-view-model"
-			slot="less-button"
-			>Show less</span
-		>
-	</tp-yt-paper-button>
-	<tp-yt-paper-button
-		id="more"
-		aria-expanded="false"
-		noink=""
-		class="style-scope ytd-expander"
-		style-target="host"
-		role="button"
-		tabindex="0"
-		animated=""
-		elevation="0"
-		aria-disabled="false"
-		hidden="">
-		<span
-			class="more-button style-scope ytd-comment-view-model"
-			slot="more-button"
-			>Read more</span
-		>
-	</tp-yt-paper-button>
-</ytd-expander> -->
+
 </html>

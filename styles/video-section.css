@@ -1,0 +1,92 @@
+#video-container {
+	position: relative;
+	display: flex;
+	height: 100%;
+	margin-left: auto;
+}
+
+#video-section {
+	width: 100%;
+	padding: 0 1rem;
+}
+
+video {
+	height: auto;
+	border-radius: 2rem;
+	background: #000;
+	display: block;
+	aspect-ratio: 403 / 716;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+
+video[controls]::-webkit-media-controls,
+video[controls]::-webkit-media-controls-enclosure,
+video[controls]::-webkit-media-controls-panel,
+video::-webkit-media-controls-overlay-play-button,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-cast-button,
+video::-webkit-media-controls-timeline-container {
+	opacity: 0 !important;
+}
+
+video[controls] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+video:focus-visible {
+	outline: none !important;
+}
+
+#video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 16px;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+#video-overlay * {
+	pointer-events: auto;
+}
+
+#video-section > video,
+#video-section > #video-overlay {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+#button-col {
+	display: flex;
+	height: 100%;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: end;
+	gap: 1rem;
+	flex-shrink: 1;
+	align-items: center;
+	padding: 0 1rem;
+}
+#button-col div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#button-col button span {
+	padding: 0.5rem;
+}
+#button-col .label {
+	font-size: small;
+}
+#button-col img {
+	border-radius: 0.5rem;
+}

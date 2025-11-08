@@ -1,0 +1,83 @@
+{
+	"id": "S_pAUPv4Ne4Nk",
+	"filename": "S_pAUPv4Ne4Nk.mp4",
+	"title": "Vis Hva Du Kan — short demo",
+	"description": "Short vertical demo clip showing a quick example. Replace with an accurate description.",
+	"duration_seconds": 12.34,
+	"duration_iso8601": "PT12.34S",
+	"width": 360,
+	"height": 640,
+	"resolution": "360x640",
+	"aspect_ratio": "9:16",
+	"orientation": "vertical",
+	"format": {
+		"container": "mp4",
+		"video_codec": "h264",
+		"audio_codec": "aac",
+		"bitrate_kbps": 400,
+		"framerate_fps": 30
+	},
+	"file_size_bytes": 596268,
+	"file_size_human": "582.57 KB",
+	"checksum": {
+		"sha256": "7A820199202E292B2F26238A5146B330E188384F02DA5EA2D8997E56B82B026A",
+		"md5": "4721CFB23A90B570E7A8BB7A23A73E9D"
+	},
+	"created_at": "2025-10-31T10:15:00Z",
+	"recorded_at": "2025-10-31T10:15:00Z",
+	"uploaded_at": "2025-11-08T12:00:00Z",
+	"uploader": "borge",
+	"license": "CC-BY-4.0",
+	"license_url": "https://creativecommons.org/licenses/by/4.0/",
+	"language": "no",
+	"captions": [],
+	"thumbnails": [
+		{
+			"path": "assets/videos/shorts/thumbnails/S_pAUPv4Ne4Nk-tn-1.jpg",
+			"width": 320,
+			"height": 568,
+			"type": "poster"
+		}
+	],
+	"tags": ["demo", "short", "vertical", "example"],
+	"categories": ["shorts"],
+	"privacy": "public",
+	"is_short": true,
+	"orientation_hint": "portrait",
+	"related_videos": [],
+	"analytics": {
+		"views": null,
+		"likes": null,
+		"comments": null
+	},
+	"source": {
+		"original_file_path": "assets/videos/shorts/S_pAUPv4Ne4Nk.mp4",
+		"source_url": null
+	},
+	"notes_for_admin": "Some fields were assumed (duration, codecs, resolution, framerate, created/uploaded timestamps). File size and checksums were present. Run ffprobe/MediaInfo to replace assumptions with accurate values.",
+	"how_to_populate": {
+		"ffprobe_command": "ffprobe -v quiet -print_format json -show_format -show_streams \"assets/videos/shorts/S_pAUPv4Ne4Nk.mp4\"",
+		"powershell_file_size": "Get-Item -Path 'assets/videos/shorts/S_pAUPv4Ne4Nk.mp4' | Select-Object -ExpandProperty Length",
+		"powershell_checksum_sha256": "Get-FileHash -Algorithm SHA256 -Path 'assets/videos/shorts/S_pAUPv4Ne4Nk.mp4' | Select-Object -ExpandProperty Hash",
+		"exiftool_or_mediainfo": "Use exiftool or MediaInfo if you prefer those tools for more metadata",
+		"populate_fields": [
+			"duration_seconds",
+			"duration_iso8601",
+			"width",
+			"height",
+			"resolution",
+			"aspect_ratio",
+			"format.container",
+			"format.video_codec",
+			"format.audio_codec",
+			"format.bitrate_kbps",
+			"format.framerate_fps",
+			"file_size_bytes",
+			"file_size_human",
+			"checksum.sha256",
+			"checksum.md5",
+			"created_at",
+			"uploaded_at"
+		]
+	}
+}

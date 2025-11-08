@@ -1,0 +1,66 @@
+{
+	"id": "S_pAUPv4Ne4Nk",
+	"title": "How to Build a Tiny JavaScript Game in 5 Minutes",
+	"description": "A compact walkthrough showing the essentials to build a tiny playable JavaScript game from scratch.",
+	"duration_seconds": 305,
+	"upload_date": "2025-10-28T14:32:00Z",
+	"views": 128420,
+	"likes": 8420,
+	"dislikes": 74,
+	"tags": ["javascript", "game-dev", "tutorial", "5-minutes", "shorts"],
+	"category": "Education",
+	"thumbnails": {
+		"default": "../../thumbnails/S_pAUPv4Ne4Nk_default.jpg",
+		"high": "../../thumbnails/S_pAUPv4Ne4Nk_high.jpg"
+	},
+	"poster": {
+		"id": "user_1382",
+		"name": "CodeQuick",
+		"profile_url": "https://example.com/channel/CodeQuick",
+		"avatar": "../../images/posts/codequick_avatar.png",
+		"subscribers": 54200
+	},
+	"comments": [
+		{
+			"id": "c1",
+			"author": {
+				"id": "u998",
+				"name": "Alice",
+				"avatar": "../../images/posts/alice.png"
+			},
+			"text": "Great concise walkthrough — loved the pacing!",
+			"likes": 120,
+			"replies_count": 2,
+			"date": "2025-10-29T08:10:00Z"
+		},
+		{
+			"id": "c2",
+			"author": {
+				"id": "u1020",
+				"name": "Bob",
+				"avatar": "../../images/posts/bob.png"
+			},
+			"text": "Could you show how to add sound next time?",
+			"likes": 34,
+			"replies_count": 1,
+			"date": "2025-10-29T09:45:00Z"
+		}
+	],
+	"comment_count": 247,
+	"analytics": {
+		"average_watch_time_seconds": 142,
+		"audience_retention_percent": 62.3,
+		"traffic_sources": {
+			"browse": 54.2,
+			"suggested": 18.7,
+			"search": 15.1,
+			"external": 12.0
+		}
+	},
+	"related_files": {
+		"original_metadata_json": "S_pAUPv4Ne4Nk.metadata.json",
+		"original_xml": "S_pAUPv4Ne4Nk.xml"
+	},
+	"generated_at": "2025-11-08T12:00:00Z",
+	"notes": "This file is an enriched metadata representation for UI and analytics. Update fields as your analytics service provides more accurate values."
+}

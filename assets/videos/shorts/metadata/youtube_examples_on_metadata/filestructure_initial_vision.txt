@@ -1,0 +1,43 @@
+write a metaddata file with these elements: 
+    title:string,
+    tags:{
+        hashtag_name: hashtag_url <!-- any #hashtags used in the comment and link to their page -->
+    } 
+    ats:map{
+        hashtag_name: hashtag_url <!-- ats=@ any @channel/@user_tag mentions used in the comment and link to their page -->
+    }
+    description:string,
+    user_tag:string,
+    user_profile_url:string,
+    subscribe_url:string,
+    profile_picture_url:string,
+    subtitles:map{
+        language : subtitle_text
+        },
+    engagement:map{
+        views:int,
+        likes:int,
+        dislikes:int,
+        comments:map{
+            <!-- NOTE: this could be seperated into its own file, then this would be a list of referral_links -->
+            user_tag:string, <!-- will fetch nessesary data from this ID (thumbnail, profile-url)-->
+            comment_id:string, <!-- url id for this comment, references by other comments -->
+            reply_link:string, <!--default:empty,  links to another comment it is replying to -->
+            is_pinned:boolean, <!--default:false,  if comment is pinned by poseter, will be at top of list if true. *negated if comment is a reply -->
+            is_poster:boolean, <!--default:false,  similar to is_pinned, should allways prioritize posters pinned comments over anything else. *negated if comment is a reply -->
+            post_date:string,
+            likes: int,
+            dislikes: int,
+            reply_count:int,
+            replies:map{
+                comment_ids:string <!-- url ids linked to this comment -->
+            },
+            comment_string:string,
+            tags:{
+                hashtag_name: hashtag_url <!-- any #hashtags used in the comment and link to their page -->
+            } 
+            ats:map{
+                hashtag_name: hashtag_url <!-- ats=@ any @channel/@user_tag mentions used in the comment and link to their page -->
+            }
+        },
+    }

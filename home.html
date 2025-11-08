@@ -10,16 +10,23 @@
 			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round&display=swap"
 			rel="stylesheet" />
 		<title>Vis hva du kan</title>
-		<link rel="stylesheet" href="home.css" />
-		<link rel="stylesheet" href="comment-section.css" />
-		<link rel="stylesheet" href="buttons.css" />
+		<link rel="stylesheet" href="/styles/comment-section.css" />
+		<link rel="stylesheet" href="/styles/buttons.css" />
+		<link rel="stylesheet" href="/styles/home.css" />
 	</head>
 	<body>
 		<header>
-			<div class="logo">
-				<span class="yt-icon"
+			<div class="flex-row" id="logo-row">
+			
+
+		
+								<button class="circular button transparent" id="menu-button">
+					<span class="material-icons-round"> menu </span>
+				</button>
+				<div class="logo">
+					<span class="yt-icon"
 					><div
-						style="
+					style="
 							width: 100%;
 							height: 100%;
 							display: block;
@@ -80,12 +87,18 @@
 					</div>
 				</span>
 			</div>
-
+			</div>
 			<!--  -->
 			<div class="search section">
 				<div class="bar">
 					<div class="field"></div>
-					<span class="material-icons-round" id="icon"> search </span>
+					<button class="circular button filled" id="icon">
+					<span class="material-icons-round" > search </span>
+				</button>
+					<!-- <button class="circular transparent">
+
+						<span class="material-icons-round" id="icon"> search </span>
+					</button> -->
 				</div>
 				<!-- <span class="material-icons-round" id="icon"> mic </span> -->
 				<button class="circular button filled">
@@ -95,7 +108,7 @@
 
 			<!--  -->
 			<div class="flex-row">
-				<button class="button pill filled">
+				<button class="pill filled">
 					<span class="material-icons-round"> add </span>
 					<span class="">Create</span>
 				</button>
@@ -110,70 +123,164 @@
 		</header>
 
 		<main class="" id="main">
+			<section id="menu-bar">
+				<button class="filled transparent">
+					<span class="material-icons-round">home</span>
+					<span class="label">Home</span>
+				</button>
+
+				<button class="filled transparent">
+					<div style="display: block; fill: currentcolor">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							viewBox="0 0 24 24"
+							width="24"
+							focusable="false"
+							aria-hidden="true"
+							style="
+								pointer-events: none;
+								display: inherit;
+								width: 100%;
+								height: 100%;
+							">
+							<path
+								d="m13.974 2.052-8 4.7a4 4 0 00.385 7.097l.942.423-1.327.78a4 4 0 004.052 6.897l8-4.7a4.001 4.001 0 00-.384-7.096L16.7 9.73l1.326-.78a4 4 0 10-4.052-6.897ZM10 15V9l5 3-5 3Z"></path>
+						</svg>
+					</div>
+					<span class="label">Shorts</span>
+				</button>
+				<button class="filled transparent">
+					<span class="material-icons-round">subscriptions</span>
+					<span class="label">Subscriptions</span>
+				</button>
+				<button class="filled transparent">
+					<!-- <span class="material-icons-round"
+						>play_circle_outline</span
+					> -->
+					<span class="material-icons-round">play_circle</span>
+					<span class="label">Music</span>
+				</button>
+				<button class="filled transparent">
+					<span class="material-icons-round">account_circle</span>
+					<span class="label">You</span>
+				</button>
+				<button class="filled transparent">
+					<span class="material-icons-round">file_download</span>
+					<span class="label">Downloads</span>
+				</button>
+			</section>
+
 			<section class="left" id="video-section">
 				<!-- Video overlay -->
-				<div id="video-overlay">
-					<div class="top flex row">
-						<div class="flex row">
-							<button class="circular button glass">
-								<span class="material-icons-round"
-									>volume_up</span
-								>
-							</button>
-							<button class="circular button glass">
-								<span class="material-icons-round"
-									>play_arrow</span
-								>
-							</button>
-						</div>
+				<div id="video-container">
+					<div id="video-overlay">
+						<div class="top flex row">
+							<div class="flex row">
+								<button class="circular button glass">
+									<span class="material-icons-round"
+										>play_arrow</span
+									>
+								</button>
+								<button class="circular button glass">
+									<span class="material-icons-round"
+										>volume_up</span
+									>
+								</button>
+							</div>
 
-						<div class="flex row">
-							<button class="circular button glass">
-								<span class="material-icons-round"
-									>more_vert</span
-								>
-							</button>
-							<button class="circular button glass">
-								<span class="material-icons-round"
-									>closed_caption</span
-								>
-							</button>
-							<button class="circular button glass">
-								<span class="material-icons-round"
-									>fullscreen</span
-								>
-							</button>
-							<button class="circular button glass">
-								<span class="material-icons-round"
-									>open_in_full</span
-								>
-							</button>
+							<div class="flex row">
+								<button class="circular button glass">
+									<span class="material-icons-round"
+										>more_vert</span
+									>
+								</button>
+								<button class="circular button glass">
+									<span class="material-icons-round"
+										>closed_caption</span
+									>
+								</button>
+								<button class="circular button glass">
+									<span class="material-icons-round"
+										>fullscreen</span
+									>
+								</button>
+						
+								</button>
+							</div>
+						</div>
+						<div class="bottom">
+							<div class="flex-row">
+								<img
+									src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+									alt="profile thumbnail"
+									class="thumbnail" />
+								<h3 id="user_name">@user_123</h3>
+								<button class="pill" id="subscribe">
+									subscribe
+								</button>
+							</div>
+
+							<h3>Video_Title</h3>
+							<p id="short_description">short_description</p>
 						</div>
 					</div>
-					<div class="bottom">
-						<div class="flex-row">
-							<img
-								src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-								alt="profile thumbnail"
-								class="thumbnail" />
-							<h3 id="user_name">@user_123</h3>
-							<button class="button pill filled" id="subscribe">
-								subscribe
-							</button>
-						</div>
-
-						<h3>Video_Title</h3>
-						<p id="short_description">short_description</p>
+					<!-- Video -->
+					<!-- <div id="video-container"> -->
+					<video preload="metadata" controls loop>
+						<source
+							src="assets/videos/shorts/S_pAUPv4Ne4Nk.mp4"
+							type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+					<!-- <video tabindex="-1" data-no-fullscreen="true" controlslist="nodownload" style="width: 449px; height: 798px; left: 0px; top: 0px;" src="blob:https://www.youtube.com/0d8a6654-bd91-4671-8bc9-c4fa5090d579" loop=""></video> -->
+				</div>
+				<div id="button-col">
+					<div>
+						<button class="circular button filled">
+							<span class="material-icons-round" id=""
+								>thumb_up</span
+							>
+						</button>
+						<span class="label"> 84K</span>
+					</div>
+					<div>
+						<button class="circular button filled">
+							<span class="material-icons-round" id=""
+								>thumb_down</span
+							>
+						</button>
+						<span class="label"> Dislike </span>
+					</div>
+					<div>
+						<button class="circular button filled">
+							<span class="material-icons-round" id="">chat</span>
+						</button>
+						<span class="label"> 1,728</span>
+					</div>
+					<div>
+						<button class="circular button filled">
+							<span class="material-icons-round" id=""
+								>reply</span
+							>
+						</button>
+						<span class="label"> Share</span>
+					</div>
+					<div>
+						<button class="circular button filled">
+							<span class="material-icons-round" id=""
+								>published_with_changes</span
+							>
+						</button>
+						<span class="label"> Remix</span>
+					</div>
+					<div>
+						<img
+							src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
+							alt="profile thumbnail"
+							class="thumbnail" />
 					</div>
 				</div>
-				<!-- Video -->
-				<video preload="metadata">
-					<source
-						src="assets/videos/shorts/S_pAUPv4Ne4Nk.mp4"
-						type="video/mp4" />
-					Your browser does not support the video tag.
-				</video>
-				<!-- <video tabindex="-1" data-no-fullscreen="true" controlslist="nodownload" style="width: 449px; height: 798px; left: 0px; top: 0px;" src="blob:https://www.youtube.com/0d8a6654-bd91-4671-8bc9-c4fa5090d579" loop=""></video> -->
 			</section>
 
 			<section class="right" id="comment-section">
@@ -227,12 +334,12 @@
 									to obtain a deviation, and a variation,
 									which is called "air"
 								</div>
-								<button class="text read-more">
+								<button class="text read-more" id="read-more">
 									Read more
 								</button>
 								<div class="flex-row button-row" id="">
 									<div class="button-row">
-										<button class="circular button small">
+										<button class="circular small">
 											<span class="material-icons-round"
 												>thumb_up</span
 											>
@@ -240,13 +347,14 @@
 										<span class="counter">
 											1.2k likes
 										</span>
-										<button class="circular button small">
+										<button class="circular small">
 											<span class="material-icons-round"
 												>thumb_down</span
 											>
 										</button>
 									</div>
-									<button class="button text small">
+									<!-- <button class="pill button text small"> -->
+									<button class="pill text small transparent">
 										reply
 									</button>
 								</div>
@@ -279,7 +387,7 @@
 											>
 										</button>
 									</div>
-									<button class="button text small">
+									<button class="pill text small transparent">
 										reply
 									</button>
 								</div>
@@ -296,7 +404,7 @@
 									<span id="timer"> 3 days ago </span>
 								</div>
 								<div class="comment-text">Bruh</div>
-								<button class="text read-more">
+								<button class="text" id="read-more">
 									Read more
 								</button>
 								<div class="flex-row button-row" id="">
@@ -311,6 +419,10 @@
 											<span class="material-icons-round"
 												>thumb_down</span
 											>
+										</button>
+										<button
+											class="pill text small transparent">
+											reply
 										</button>
 									</div>
 								</div>
@@ -329,15 +441,106 @@
 							</div>
 						</div>
 						<div class="flex-row button-row" id="comment-buttons">
-							<button class="button text">Cancel</button>
-							<button class="button pill glass">
+							<button class="text">Cancel</button>
+							<button class="pill glass">
 								<span class="">Comment</span>
 							</button>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			<section id="navigation-bar">
+				<div>
+					<button class="filled circular" id="previous">
+						<span class="material-icons-round">arrow_upward</span>
+					</button>
+				</div>
+				<div>
+					<button class="filled circular">
+						<span class="material-icons-round">arrow_downward</span>
+					</button>
+				</div>
+			</section>
 		</main>
 		<footer></footer>
 	</body>
+	<!-- 
+max lines expander from youtube
+<ytd-expander
+	id="expander"
+	max-number-of-lines="4"
+	class="style-scope ytd-comment-view-model"
+	collapsed=""
+	should-use-number-of-lines=""
+	style="--ytd-expander-max-lines: 4">
+	
+	<div id="content" class="style-scope ytd-expander">
+		<yt-pdg-comment-chip-renderer
+			id="paid-comment-chip"
+			slot="content"
+			class="style-scope ytd-comment-view-model"
+			hidden=""
+			>
+			<div
+				id="comment-chip-container"
+				class="style-scope yt-pdg-comment-chip-renderer">
+				<yt-icon class="style-scope yt-pdg-comment-chip-renderer"
+					>
+				><span
+					id="comment-chip-price"
+					class="style-scope yt-pdg-comment-chip-renderer">
+				</span></div></yt-pdg-comment-chip-renderer
+		><yt-attributed-string
+			id="content-text"
+			slot="content"
+			user-input=""
+			class="style-scope ytd-comment-view-model"
+			><span
+				class="yt-core-attributed-string yt-core-attributed-string--white-space-pre-wrap"
+				dir="auto"
+				role="text"
+				>I have a table top mini fire pit fueled by isopropyl alcohol
+				and it blew up several times till I figured you cant let the
+				fuel get too low</span
+			></yt-attributed-string
+		>
+	</div>
+	<tp-yt-paper-button
+		id="less"
+		aria-expanded="true"
+		noink=""
+		class="style-scope ytd-expander"
+		hidden=""
+		style-target="host"
+		role="button"
+		tabindex="0"
+		animated=""
+		elevation="0"
+		aria-disabled="false">
+		<span
+			class="less-button style-scope ytd-comment-view-model"
+			slot="less-button"
+			>Show less</span
+		>
+	</tp-yt-paper-button>
+	<tp-yt-paper-button
+		id="more"
+		aria-expanded="false"
+		noink=""
+		class="style-scope ytd-expander"
+		style-target="host"
+		role="button"
+		tabindex="0"
+		animated=""
+		elevation="0"
+		aria-disabled="false"
+		hidden="">
+		<span
+			class="more-button style-scope ytd-comment-view-model"
+			slot="more-button"
+			>Read more</span
+		>
+	</tp-yt-paper-button>
+</ytd-expander> -->
 </html>

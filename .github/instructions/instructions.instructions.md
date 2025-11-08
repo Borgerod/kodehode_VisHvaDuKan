@@ -2,4 +2,4 @@
 applyTo: "**"
 ---
 
-never add comments to the code.
+-   do not add comments to the code (enforce).

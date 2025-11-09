@@ -12,16 +12,6 @@ header img {
 	width: auto;
 	object-fit: contain;
 }
-.search #icon {
-	background-color: transparent;
-}
-
-#logo-row {
-	padding-top: 0.5rem;
-	padding-right: 1rem;
-	align-items: center;
-	gap: 1rem;
-}
 
 #menu-button {
 	display: flex;
@@ -31,6 +21,7 @@ header img {
 	padding: 0 0.5rem;
 }
 
+/* > search bar */
 .search {
 	display: flex;
 	flex-direction: row;
@@ -66,6 +57,7 @@ header img {
 	align-items: center;
 	justify-content: center;
 	color: white;
+	background-color: transparent;
 }
 
 /*> logo */
@@ -102,4 +94,11 @@ header img {
 	gap: 5px;
 	padding: 7px 25px 10px 5px;
 	justify-content: center;
+}
+
+#logo-row {
+	padding-top: 0.5rem;
+	padding-right: 1rem;
+	align-items: center;
+	gap: 1rem;
 }

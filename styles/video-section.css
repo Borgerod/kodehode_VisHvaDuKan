@@ -1,3 +1,14 @@
+/*> video-section */
+#video-section {
+	width: 100%;
+	padding: 0 1rem;
+}
+#video-section > video,
+#video-section > #video-overlay {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+/*> video-container */
 #video-container {
 	position: relative;
 	display: flex;
@@ -5,11 +16,7 @@
 	margin-left: auto;
 }
 
-#video-section {
-	width: 100%;
-	padding: 0 1rem;
-}
-
+/*> video */
 video {
 	height: auto;
 	border-radius: 2rem;
@@ -21,6 +28,11 @@ video {
 	cursor: pointer;
 }
 
+video:focus-visible {
+	outline: none !important;
+}
+
+/* > video controlls  */
 video[controls]::-webkit-media-controls,
 video[controls]::-webkit-media-controls-enclosure,
 video[controls]::-webkit-media-controls-panel,
@@ -36,10 +48,7 @@ video[controls] {
 	appearance: none;
 }
 
-video:focus-visible {
-	outline: none !important;
-}
-
+/*> video overlay [custom controls]*/
 #video-overlay {
 	position: absolute;
 	top: 0;
@@ -57,11 +66,20 @@ video:focus-visible {
 	pointer-events: auto;
 }
 
-#video-section > video,
-#video-section > #video-overlay {
-	grid-area: 1 / 1 / 2 / 2;
+#top {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
 }
 
+#bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+
+/*> button-col (engagement buttons) */
 #button-col {
 	display: flex;
 	height: 100%;
@@ -79,10 +97,6 @@ video:focus-visible {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-#button-col button span {
-	padding: 0.5rem;
 }
 #button-col .label {
 	font-size: small;

@@ -11,10 +11,6 @@
 	flex-grow: 0;
 }
 
-#navigation-bar button {
-	padding: 1rem;
-}
-
 #previous {
 	visibility: hidden;
 }

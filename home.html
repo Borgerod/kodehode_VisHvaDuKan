@@ -137,7 +137,7 @@
 			<section class="left" id="video-section">
 				<div id="video-container">
 					<div id="video-overlay">
-						<div class="top flex row">
+						<div class="flex row" id="top">
 							<div class="flex row">
 								<button class="circular button glass">
 									<span class="material-icons-round"
@@ -169,7 +169,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="bottom">
+						<div id="bottom">
 							<div class="flex-row">
 								<img
 									src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -301,7 +301,7 @@
 												>thumb_up</span
 											>
 										</button>
-										<span class="counter">
+										<span class="like-counter">
 											1.2k likes
 										</span>
 										<button class="circular small">
@@ -336,7 +336,9 @@
 												>thumb_up</span
 											>
 										</button>
-										<span class="counter"> 21 likes </span>
+										<span class="like-counter">
+											21 likes
+										</span>
 										<button class="circular button small">
 											<span class="material-icons-round"
 												>thumb_down</span
@@ -370,7 +372,9 @@
 												>thumb_up</span
 											>
 										</button>
-										<span class="counter"> 912 likes </span>
+										<span class="like-counter">
+											912 likes
+										</span>
 										<button class="circular button small">
 											<span class="material-icons-round"
 												>thumb_down</span
@@ -397,8 +401,12 @@
 							</div>
 						</div>
 						<div class="flex-row button-row" id="comment-buttons">
-							<button class="text">Cancel</button>
-							<button class="pill glass">
+							<button
+								class="pill text small transparent"
+								id="cancel">
+								Cancel
+							</button>
+							<button class="pill glass" id="comment-button">
 								<span class="">Comment</span>
 							</button>
 						</div>
@@ -419,6 +427,6 @@
 				</div>
 			</section>
 		</main>
-		<footer></footer>
+		<footer style="display: none">No feet for you</footer>
 	</body>
 </html>
